@@ -77,7 +77,6 @@ export const fetchOrders = (token, userId) => {
             id: key
         });
         }
-        console.log(res.data);
         dispatch(fetchOrdersSuccess(fetchedOrders));
         // this.setState({loading: false, orders: fetchedOrders});
       })
